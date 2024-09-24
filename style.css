@@ -1,0 +1,52 @@
+body {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+.bg-container {
+    background-color: white;
+    width: 400px;
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: 4px 5px 22px rgba(0, 0, 10, 0.7);
+}
+h1 {
+    font-size: 24px;
+    font-family:calibri;
+}
+p {
+    font-family: calibri;
+    font-size: 16px;
+}
+
+form {
+    margin: 20px 0 27px;
+}
+form input {
+    width: 90%;
+    height: 55px;
+    border-radius: 5px;
+    padding-left: 5px;
+    border-width: 1px;
+}
+form button{
+    opacity: 0.7;
+    width: 90%;
+    height: 55px;
+    border-radius: 5px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    font-family: calibri;
+    font-size: 18px;
+    margin-top: 10px;
+    pointer-events: none;
+}
+form input:valid ~ button {
+    opacity:1;
+    pointer-events: auto;
+}
